@@ -1,4 +1,5 @@
 <?php
+namespace Flexihash\Hasher;
 
 /**
  * Hashes given values into a sortable fixed size address space.
@@ -7,7 +8,7 @@
  * @package Flexihash
  * @licence http://www.opensource.org/licenses/mit-license.php
  */
-interface Flexihash_Hasher
+interface Hasher
 {
 
 	/**

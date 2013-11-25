@@ -1,4 +1,5 @@
 <?php
+namespace Flexihash\Hasher;
 
 /**
  * Uses CRC32 to hash a value into a signed 32bit int address space.
@@ -8,17 +9,10 @@
  * @package Flexihash
  * @licence http://www.opensource.org/licenses/mit-license.php
  */
-class Flexihash_Crc32Hasher
-	implements Flexihash_Hasher
-{
+class Crc32Hasher implements Hasher {
 
-	/* (non-phpdoc)
-	 * @see Flexihash_Hasher::hash()
-	 */
-	public function hash($string)
-	{
+	public function hash($string) {
 		return crc32($string);
 	}
-
 }
 
